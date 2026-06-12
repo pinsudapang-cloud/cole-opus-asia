@@ -1,304 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cole Opus Asia</title>
-
+    <meta name="description"
+          content="Commissioning and Technical Advisory for Complex Engineering Projects Across Asia.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <!-- Header -->
     <header>
         <div class="container nav">
-
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Cole Opus Asia Logo" width="200">
+                    <img src="images/logo.png"
+                         alt="Cole Opus Asia Logo"
+                         class="logo-img">
                 </a>
             </div>
-
             <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="approach.html">Approach</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"
+                   class="active"
+                   data-en="Home"
+                   data-th="หน้าแรก">
+                    Home
+                </a>
+                <a href="services.html"
+                   data-en="Services"
+                   data-th="บริการ">
+                    Services
+                </a>
+                <a href="about.html"
+                   data-en="About"
+                   data-th="เกี่ยวกับเรา">
+                    About
+                </a>
+                <a href="approach.html"
+                   data-en="Approach"
+                   data-th="แนวทางการทำงาน">
+                    Approach
+                </a>
+                <a href="contact.html"
+                   data-en="Contact"
+                   data-th="ติดต่อ">
+                    Contact
+                </a>
+                <div class="language-switcher">
+                    <button onclick="setLanguage('en')">
+                        EN
+                    </button>
+                    <button onclick="setLanguage('th')">
+                        ไทย
+                    </button>
+                </div>
             </nav>
-
         </div>
     </header>
-
     <!-- Hero -->
     <section class="hero">
         <div class="container hero-grid">
-
             <div class="hero-content">
-
-                <h1>
+                <h1
+                    data-en="Commissioning and Technical Advisory for Complex Engineering Projects Across Asia"
+                    data-th="ที่ปรึกษาด้าน Commissioning และเทคนิค สำหรับโครงการวิศวกรรมที่มีความซับซ้อนทั่วเอเชีย">
                     Commissioning and Technical Advisory
                     for Complex Engineering Projects Across Asia
                 </h1>
-
-                <p>
+                <p
+                    data-en="Cole Opus Asia provides client-side commissioning, technical review, and project support for data centres, critical infrastructure, and high-reliability engineering environments."
+                    data-th="Cole Opus Asia ให้บริการด้าน Commissioning ฝั่งเจ้าของโครงการ การทบทวนทางเทคนิค และการสนับสนุนโครงการสำหรับดาต้าเซ็นเตอร์ โครงสร้างพื้นฐานสำคัญ และงานวิศวกรรมที่ต้องการความน่าเชื่อถือสูง">
                     Cole Opus Asia provides client-side commissioning,
                     technical review, and project support for data centres,
                     critical infrastructure, and high-reliability engineering
                     environments.
                 </p>
-
-                <a href="contact.html" class="btn">
-                    Contact Us
+                <a href="contact.html"
+                   class="btn"
+                   data-en="Discuss Your Project"
+                   data-th="ปรึกษาโครงการของคุณ">
+                    Discuss Your Project
                 </a>
-
             </div>
-
             <div class="hero-image">
-                <img src="images/data-centre.jpg" alt="Data Centre">
+                <img src="images/data-centre.jpg"
+                     alt="Data Centre">
             </div>
-
         </div>
     </section>
-
     <!-- Services -->
     <section class="services">
         <div class="container">
-
             <div class="section-title">
-                <h2>Services</h2>
-
-                <p>
+                <h2 data-en="Services"
+                    data-th="บริการ">
+                    Services
+                </h2>
+                <p
+                    data-en="Supporting projects from planning through commissioning and delivery."
+                    data-th="สนับสนุนโครงการตั้งแต่การวางแผน การ Commissioning จนถึงการส่งมอบ">
                     Supporting projects from planning through commissioning and delivery.
                 </p>
             </div>
-
             <div class="service-grid">
-
                 <div class="card">
-                    <h3>Commissioning Management</h3>
-                    <p>
+                    <h3
+                        data-en="Commissioning Management"
+                        data-th="การบริหารงาน Commissioning">
+                        Commissioning Management
+                    </h3>
+                    <p
+                        data-en="Planning and managing commissioning activities through all project phases."
+                        data-th="วางแผนและบริหารกิจกรรมด้าน Commissioning ในทุกช่วงของโครงการ">
                         Planning and managing commissioning activities through all project phases.
                     </p>
                 </div>
-
                 <div class="card">
-                    <h3>Client-Side Commissioning Agent Support</h3>
-                    <p>
+                    <h3
+                        data-en="Client-Side Commissioning Agent Support"
+                        data-th="สนับสนุนงาน Commissioning ฝั่งเจ้าของโครงการ">
+                        Client-Side Commissioning Agent Support
+                    </h3>
+                    <p
+                        data-en="Independent technical representation supporting client objectives."
+                        data-th="เป็นตัวแทนด้านเทคนิคที่เป็นอิสระเพื่อสนับสนุนเป้าหมายของลูกค้า">
                         Independent technical representation supporting client objectives.
                     </p>
                 </div>
-
                 <div class="card">
-                    <h3>Technical Review</h3>
-                    <p>
+                    <h3
+                        data-en="Technical Review"
+                        data-th="การทบทวนทางเทคนิค">
+                        Technical Review
+                    </h3>
+                    <p
+                        data-en="Review of drawings, specifications and project documentation."
+                        data-th="ตรวจสอบแบบ ข้อกำหนด และเอกสารโครงการ">
                         Review of drawings, specifications and project documentation.
                     </p>
                 </div>
-
                 <div class="card">
-                    <h3>Data Centre Commissioning Support</h3>
-                    <p>
+                    <h3
+                        data-en="Data Centre Commissioning Support"
+                        data-th="สนับสนุนงาน Commissioning สำหรับดาต้าเซ็นเตอร์">
+                        Data Centre Commissioning Support
+                    </h3>
+                    <p
+                        data-en="Specialist support for mission critical environments."
+                        data-th="ให้การสนับสนุนเฉพาะทางสำหรับระบบที่มีความสำคัญสูง">
                         Specialist support for mission critical environments.
                     </p>
                 </div>
-
                 <div class="card">
-                    <h3>Project Documentation & Process Support</h3>
-                    <p>
+                    <h3
+                        data-en="Project Documentation & Process Support"
+                        data-th="การจัดการเอกสารและกระบวนการโครงการ">
+                        Project Documentation & Process Support
+                    </h3>
+                    <p
+                        data-en="Structured reporting, issue tracking and closeout support."
+                        data-th="รายงานผลอย่างเป็นระบบ ติดตามประเด็น และสนับสนุนการปิดโครงการ">
                         Structured reporting, issue tracking and closeout support.
                     </p>
                 </div>
-
             </div>
-
         </div>
     </section>
-
-    <!-- Why Work With Us -->
+        <!-- Why Work With Us -->
     <section class="approach">
         <div class="container">
-
             <div class="section-title">
-                <h2>Why Work With Us</h2>
+                <h2
+                    data-en="Why Work With Us"
+                    data-th="ทำไมต้องเลือกเรา">
+                    Why Work With Us
+                </h2>
             </div>
-
             <div class="approach-grid">
-
                 <div>
-                    <h3>Clarity</h3>
-                    <p>Clear reporting and communication.</p>
+                    <h3 data-en="Clarity"
+                        data-th="ความชัดเจน">
+                        Clarity
+                    </h3>
+                    <p
+                        data-en="Clear reporting and communication."
+                        data-th="การสื่อสารและการรายงานที่ชัดเจน">
+                        Clear reporting and communication.
+                    </p>
                 </div>
-
                 <div>
-                    <h3>Reliability</h3>
-                    <p>Consistent project support.</p>
+                    <h3 data-en="Reliability"
+                        data-th="ความน่าเชื่อถือ">
+                        Reliability
+                    </h3>
+                    <p
+                        data-en="Consistent project support."
+                        data-th="การสนับสนุนโครงการอย่างสม่ำเสมอ">
+                        Consistent project support.
+                    </p>
                 </div>
-
                 <div>
-                    <h3>Technical Discipline</h3>
-                    <p>Evidence-based engineering approach.</p>
+                    <h3 data-en="Technical Discipline"
+                        data-th="วินัยทางวิศวกรรม">
+                        Technical Discipline
+                    </h3>
+                    <p
+                        data-en="Evidence-based engineering approach."
+                        data-th="แนวทางวิศวกรรมที่ยึดหลักฐานและข้อเท็จจริง">
+                        Evidence-based engineering approach.
+                    </p>
                 </div>
-
                 <div>
-                    <h3>Client-Side Focus</h3>
-                    <p>Independent representation of client interests.</p>
+                    <h3 data-en="Client-Side Focus"
+                        data-th="ยึดประโยชน์ของลูกค้าเป็นหลัก">
+                        Client-Side Focus
+                    </h3>
+                    <p
+                        data-en="Independent representation of client interests."
+                        data-th="เป็นตัวแทนที่เป็นอิสระเพื่อปกป้องผลประโยชน์ของลูกค้า">
+                        Independent representation of client interests.
+                    </p>
                 </div>
-
             </div>
-
         </div>
     </section>
-
     <!-- About -->
     <section class="about">
         <div class="container">
-
             <div class="section-title">
-                <h2>About Cole Opus Asia</h2>
+                <h2
+                    data-en="About Cole Opus Asia"
+                    data-th="เกี่ยวกับ Cole Opus Asia">
+                    About Cole Opus Asia
+                </h2>
             </div>
-
-            <p class="about-text">
+            <p class="about-text"
+               data-en="Cole Opus Asia is a Thailand-based engineering consultancy providing commissioning and technical advisory services for complex projects across Asia."
+               data-th="Cole Opus Asia เป็นบริษัทที่ปรึกษาด้านวิศวกรรมในประเทศไทย ให้บริการด้าน Commissioning และที่ปรึกษาทางเทคนิคสำหรับโครงการที่มีความซับซ้อนทั่วภูมิภาคเอเชีย">
                 Cole Opus Asia is a Thailand-based engineering consultancy
                 providing commissioning and technical advisory services
                 for complex projects across Asia.
             </p>
-
         </div>
     </section>
-
-    <!-- Mission Statement -->
-<section class="mission">
-
-    <div class="container">
-
-        <div class="section-title">
-            <span class="section-tag">
-                OUR MISSION
-            </span>
-
-            <h2>
-                We Exist to Deliver Work Properly
-            </h2>
-        </div>
-
-        <div class="mission-content">
-
-            <p>
-                We do what we say we will do. We tell the truth,
-                even when it is uncomfortable. We take responsibility
-                for our mistakes and take pride in our successes
-                without ego.
-            </p>
-
-            <p>
-                We believe consistency matters more than moments of brilliance,
-                because projects succeed when ordinary people do the
-                unglamorous things well, day after day, with care,
-                discipline, and professionalism.
-            </p>
-
-            <p>
-                We invest in people. We share what we know and build
-                capability rather than dependency. We treat clients,
-                colleagues, contractors, and communities with respect,
-                regardless of title or status.
-            </p>
-
-            <p>
-                We strive to leave everything better than we found it.
-            </p>
-
-            <blockquote>
-                No politics. No heroes. No shortcuts.
-                <br>
-                <strong>
-                    Just good people doing good work properly.
-                </strong>
-            </blockquote>
-
-        </div>
-
-    </div>
-
-</section>
-
     <!-- Regional Coverage -->
     <section class="coverage">
-
         <div class="container coverage-grid">
-
             <div class="coverage-content">
-
-                <span class="section-tag">
+                <span class="section-tag"
+                      data-en="REGIONAL COVERAGE"
+                      data-th="พื้นที่ให้บริการ">
                     REGIONAL COVERAGE
                 </span>
-
-                <h2>
+                <h2
+                    data-en="Supporting Projects Across Asia"
+                    data-th="สนับสนุนโครงการทั่วเอเชีย">
                     Supporting Projects Across Asia
                 </h2>
-
-                <p>
+                <p
+                    data-en="Based in Thailand and supporting projects across Asia, providing commissioning, technical review and project support for mission critical facilities and complex engineering environments."
+                    data-th="เราตั้งอยู่ในประเทศไทยและให้การสนับสนุนโครงการทั่วเอเชีย ทั้งด้าน Commissioning การทบทวนทางเทคนิค และการสนับสนุนโครงการสำหรับงานวิศวกรรมที่มีความสำคัญสูง">
                     Based in Thailand and supporting projects across Asia,
                     providing commissioning, technical review and project
                     support for mission critical facilities and complex
                     engineering environments.
                 </p>
-
             </div>
-
             <div class="coverage-image">
-                <img
-                    src="images/asia-map.jpg"
-                    alt="Asia Coverage Map">
+                <img src="images/asia-map.jpg"
+                     alt="Asia Coverage Map">
             </div>
-
         </div>
-
     </section>
-
     <!-- Contact CTA -->
     <section class="contact-cta">
-
         <div class="container">
-
-            <h2>Ready to discuss your project?</h2>
-
-            <a href="contact.html" class="btn-light">
+            <h2
+                data-en="Ready to discuss your project?"
+                data-th="พร้อมพูดคุยเกี่ยวกับโครงการของคุณหรือยัง?">
+                Ready to discuss your project?
+            </h2>
+            <a href="contact.html"
+               class="btn-light"
+               data-en="Contact Us"
+               data-th="ติดต่อเรา">
                 Contact Us
             </a>
-
         </div>
-
     </section>
-
     <!-- Footer -->
     <footer>
-
         <div class="container footer-grid">
-
             <div>
                 <h3>Cole Opus Asia</h3>
-                <p>Commissioning & Technical Advisory</p>
+                <p
+                    data-en="Commissioning & Technical Advisory"
+                    data-th="ที่ปรึกษาด้าน Commissioning และเทคนิค">
+                    Commissioning & Technical Advisory
+                </p>
             </div>
-
             <div>
-                <p>+66 64 225 8179</p>
-                <p>info@coleopusasia.com</p>
-                <p>Thailand</p>
+                <p>
+                    <a href="tel:+66642258179">
+                        +66 64 225 8179
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:info@coleopusasia.com">
+                        info@coleopusasia.com
+                    </a>
+                </p>
+                <p
+                    data-en="Thailand"
+                    data-th="ประเทศไทย">
+                    Thailand
+                </p>
             </div>
-
         </div>
-
+        <div class="footer-bottom">
+            <p>
+                © 2026 Cole Opus Asia. All Rights Reserved.
+            </p>
+        </div>
     </footer>
-
+    <script>
+function setLanguage(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-en]").forEach(element => {
+        if(element.dataset[lang]){
+            element.textContent = element.dataset[lang];
+        }
+    });
+    localStorage.setItem("language", lang);
+}
+document.addEventListener("DOMContentLoaded", function(){
+    const savedLanguage =
+        localStorage.getItem("language") || "en";
+    setLanguage(savedLanguage);
+});
+</script>
 </body>
-
 </html>

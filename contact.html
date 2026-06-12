@@ -1,114 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contact | Cole Opus Asia</title>
+    <title>Contact | Cole Opus Asia</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description"
+          content="Contact Cole Opus Asia to discuss commissioning, technical advisory and project support requirements across Asia.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header class="header">
+    <!-- Header -->
+    <header> 
+           <div class="container nav">
 
-    <div class="container nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" 
+                         alt="Cole Opus Asia Logo" width="200">
+                </a>
+            </div>
 
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo" width="200"> </img>
+            <nav>
+               <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="approach.html">Approach</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="approach.html">Approach</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
+    </header>
 
-    </div>
+    <!-- Hero -->
+    <section class="page-hero">
 
-</header>
+        <div class="container">
 
-<section class="page-hero">
+            <span class="section-tag">
+                CONTACT
+            </span>
 
-    <div class="container">
+            <h1>
+                Get in Touch
+            </h1>
 
-        <span class="page-tag">
-            CONTACT
-        </span>
+            <p>
+                Contact Cole Opus Asia to discuss commissioning,
+                technical advisory and project support requirements.
+            </p>
 
-        <h1>
-            Get in Touch
-        </h1>
+        </div>
 
-        <p>
-            Contact Cole Opus Asia to discuss commissioning,
-            technical advisory and project support requirements.
-        </p>
+    </section>
 
-    </div>
+    <!-- Contact -->
+    <section class="contact-section">
 
-</section>
+        <div class="container contact-grid">
 
-<section class="contact-section">
+            <!-- Contact Information -->
+            <div class="contact-info">
 
-    <div class="container contact-grid">
+                <h2>Contact Information</h2>
 
-        <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Company</h3>
+                    <p>Cole Opus Asia</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Phone</h3>
+
+                    <p>
+                        <a href="tel:+66642258179">
+                            +66 64 225 8179
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+
+                    <p>
+                        <a href="mailto:info@coleopusasia.com">
+                            info@coleopusasia.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Thailand</p>
+                </div>
+
+            </div>
+
+            <!-- Enquiry Form -->
+            <div class="contact-form-card">
+
+                <h2>Send an Enquiry</h2>
+
+                <form action="https://formsubmit.co/info@coleopusasia.com"
+                      method="POST">
+
+                    <input type="hidden"
+                           name="_subject"
+                           value="New Website Enquiry">
+
+                    <input type="hidden"
+                           name="_captcha"
+                           value="false">
+
+                    <div class="form-group">
+
+                        <label for="name">Name</label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="company">Company</label>
+
+                        <input type="text"
+                               id="company"
+                               name="company">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">Email</label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input type="text"
+                               id="subject"
+                               name="subject">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  required></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Send Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Regional Support -->
+    <section class="contact-cta-simple">
+
+        <div class="container">
 
             <h2>
-                Contact Information
+                Supporting Projects Across Thailand and Asia
             </h2>
 
-            <div class="contact-item">
+            <p>
+                Providing commissioning, technical review and project support
+                for complex engineering environments.
+            </p>
 
-                <h3>
-                    Company
-                </h3>
+        </div>
+
+    </section>
+
+    <!-- Mission Quote -->
+    <section class="contact-quote">
+
+        <div class="container">
+
+            <blockquote>
+                No politics. No heroes. No shortcuts.
+                <br>
+
+                <strong>
+                    Just good people doing good work properly.
+                </strong>
+
+            </blockquote>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>Cole Opus Asia</h3>
 
                 <p>
-                    Cole Opus Asia
+                    Commissioning & Technical Advisory
                 </p>
 
             </div>
 
-            <div class="contact-item">
-
-                <h3>
-                    Phone
-                </h3>
+            <div>
 
                 <p>
-                    +66 64 225 8179
+                    <a href="tel:+66642258179">
+                        +66 64 225 8179
+                    </a>
                 </p>
-
-            </div>
-
-            <div class="contact-item">
-
-                <h3>
-                    Email
-                </h3>
 
                 <p>
-                    info@coleopusasia.com
+                    <a href="mailto:info@coleopusasia.com">
+                        info@coleopusasia.com
+                    </a>
                 </p>
-
-            </div>
-
-            <div class="contact-item">
-
-                <h3>
-                    Location
-                </h3>
 
                 <p>
                     Thailand
@@ -117,111 +264,8 @@
             </div>
 
         </div>
-
-        <div class="contact-form-card">
-
-            <h2>
-                Send an Enquiry
-            </h2>
-
-            <form>
-
-                <div class="form-group">
-
-                    <label>Name</label>
-
-                    <input type="text" required>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Company</label>
-
-                    <input type="text">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Email</label>
-
-                    <input type="email" required>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Message</label>
-
-                    <textarea rows="6" required></textarea>
-
-                </div>
-
-                <button type="submit" class="btn-primary">
-                    Submit Enquiry
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="contact-cta-simple">
-
-    <div class="container">
-
-        <h2>
-            Supporting Projects Across Thailand and Asia
-        </h2>
-
-        <p>
-            Providing commissioning, technical review and project support
-            for complex engineering environments.
-        </p>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <div class="container footer">
-
-        <div>
-
-            <h3>
-                Cole Opus Asia
-            </h3>
-
-            <p>
-                Commissioning & Technical Advisory
-            </p>
-
-        </div>
-
-        <div>
-
-            <p>
-                +66 64 225 8179
-            </p>
-
-            <p>
-                info@coleopusasia.com
-            </p>
-
-            <p>
-                Thailand
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>
