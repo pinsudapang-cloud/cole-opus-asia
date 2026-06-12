@@ -264,6 +264,43 @@ footer{
     }
 }
 
+/* Mission Statement */
+
+.mission{
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.mission-content{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.mission-content p{
+    margin-bottom: 24px;
+    line-height: 1.9;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.mission blockquote{
+    margin-top: 50px;
+    padding: 40px;
+    border-left: 4px solid #0d2b45;
+    background: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #0d2b45;
+}
+
+.mission blockquote strong{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
 /*about page*/
 
 .company-overview{
@@ -414,6 +451,44 @@ footer{
         font-size:32px;
     }
 
+}
+/* About Page */
+.page-hero{
+    padding: 120px 20px 80px;
+    text-align: center;
+}
+.page-hero p{
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+.content-width{
+    max-width: 850px;
+    margin: 0 auto;
+}
+.about-story,
+.mission{
+    padding: 100px 20px;
+}
+.content-width p{
+    margin-bottom: 24px;
+    line-height: 1.9;
+}
+.mission{
+    background: #f8f9fa;
+}
+.mission blockquote{
+    margin-top: 50px;
+    padding: 40px;
+    border-left: 4px solid #0d2b45;
+    background: #ffffff;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: #0d2b45;
+}
+.mission blockquote strong{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.6rem;
 }
 
 /*approach page*/
