@@ -1,271 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contact | Cole Opus Asia</title>
-
     <meta name="description"
-          content="Contact Cole Opus Asia to discuss commissioning, technical advisory and project support requirements across Asia.">
-
+          content="Contact Cole Opus Asia for commissioning, technical advisory and project support across Thailand and Asia.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
           rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
     <!-- Header -->
-    <header> 
-           <div class="container nav">
-
+    <header>
+        <div class="container nav">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" 
-                         alt="Cole Opus Asia Logo" width="200">
+                    <img src="images/logo.png"
+                         alt="Cole Opus Asia Logo"
+                         class="logo-img">
                 </a>
             </div>
-
             <nav>
-               <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="approach.html">Approach</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html"
+                   data-en="Home"
+                   data-th="หน้าแรก">
+                    Home
+                </a>
+                <a href="services.html"
+                   data-en="Services"
+                   data-th="บริการ">
+                    Services
+                </a>
+                <a href="about.html"
+                   data-en="About"
+                   data-th="เกี่ยวกับเรา">
+                    About
+                </a>
+                <a href="approach.html"
+                   data-en="Approach"
+                   data-th="แนวทางการทำงาน">
+                    Approach
+                </a>
+                <a href="contact.html"
+                   class="active"
+                   data-en="Contact"
+                   data-th="ติดต่อ">
+                    Contact
+                </a>
+                <div class="language-switcher">
+                    <button onclick="setLanguage('en')">
+                        EN
+                    </button>
+                    <button onclick="setLanguage('th')">
+                        TH
+                    </button>
+                </div>
             </nav>
-
         </div>
-
     </header>
-
     <!-- Hero -->
     <section class="page-hero">
-
         <div class="container">
-
-            <span class="section-tag">
+            <span class="section-tag"
+                  data-en="CONTACT"
+                  data-th="ติดต่อเรา">
                 CONTACT
             </span>
-
-            <h1>
-                Get in Touch
+            <h1
+                data-en="Let's Discuss Your Project"
+                data-th="มาพูดคุยเกี่ยวกับโครงการของคุณกัน">
+                Let's Discuss Your Project
             </h1>
-
-            <p>
+            <p
+                data-en="Contact Cole Opus Asia to discuss commissioning, technical advisory and project support requirements."
+                data-th="ติดต่อ Cole Opus Asia เพื่อพูดคุยเกี่ยวกับบริการด้าน Commissioning ที่ปรึกษาทางเทคนิค และการสนับสนุนโครงการ">
                 Contact Cole Opus Asia to discuss commissioning,
                 technical advisory and project support requirements.
             </p>
-
         </div>
-
     </section>
-
-    <!-- Contact -->
+    <!-- Contact Information -->
     <section class="contact-section">
-
         <div class="container contact-grid">
-
-            <!-- Contact Information -->
             <div class="contact-info">
-
-                <h2>Contact Information</h2>
-
+                <h2
+                    data-en="Contact Information"
+                    data-th="ข้อมูลการติดต่อ">
+                    Contact Information
+                </h2>
                 <div class="contact-item">
-                    <h3>Company</h3>
-                    <p>Cole Opus Asia</p>
+                    <h3
+                        data-en="Company"
+                        data-th="บริษัท">
+                        Company
+                    </h3>
+                    <p>
+                        Cole Opus Asia
+                    </p>
                 </div>
-
                 <div class="contact-item">
-                    <h3>Phone</h3>
-
+                    <h3
+                        data-en="Phone"
+                        data-th="โทรศัพท์">
+                        Phone
+                    </h3>
                     <p>
                         <a href="tel:+66642258179">
                             +66 64 225 8179
                         </a>
                     </p>
                 </div>
-
                 <div class="contact-item">
-                    <h3>Email</h3>
-
+                    <h3
+                        data-en="Email"
+                        data-th="อีเมล">
+                        Email
+                    </h3>
                     <p>
                         <a href="mailto:info@coleopusasia.com">
                             info@coleopusasia.com
                         </a>
                     </p>
                 </div>
-
                 <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>Thailand</p>
+                    <h3
+                        data-en="Location"
+                        data-th="ที่ตั้ง">
+                        Location
+                    </h3>
+                    <p
+                        data-en="Thailand"
+                        data-th="ประเทศไทย">
+                        Thailand
+                    </p>
                 </div>
-
             </div>
-
-            <!-- Enquiry Form -->
+                        <!-- Contact Form -->
             <div class="contact-form-card">
-
-                <h2>Send an Enquiry</h2>
-
-                <form action="https://formsubmit.co/info@coleopusasia.com"
+                <h2
+                    data-en="Send an Enquiry"
+                    data-th="ส่งข้อความถึงเรา">
+                    Send an Enquiry
+                </h2>
+                <!-- หากต้องการใช้งานจริง แนะนำเชื่อมกับ Formspree -->
+                <form action="https://formspree.io/f/your-form-id"
                       method="POST">
-
-                    <input type="hidden"
-                           name="_subject"
-                           value="New Website Enquiry">
-
-                    <input type="hidden"
-                           name="_captcha"
-                           value="false">
-
                     <div class="form-group">
-
-                        <label for="name">Name</label>
-
+                        <label
+                            data-en="Name"
+                            data-th="ชื่อ">
+                            Name
+                        </label>
                         <input type="text"
-                               id="name"
                                name="name"
                                required>
-
                     </div>
-
                     <div class="form-group">
-
-                        <label for="company">Company</label>
-
+                        <label
+                            data-en="Company"
+                            data-th="บริษัท">
+                            Company
+                        </label>
                         <input type="text"
-                               id="company"
                                name="company">
-
                     </div>
-
                     <div class="form-group">
-
-                        <label for="email">Email</label>
-
+                        <label
+                            data-en="Email"
+                            data-th="อีเมล">
+                            Email
+                        </label>
                         <input type="email"
-                               id="email"
                                name="email"
                                required>
-
                     </div>
-
                     <div class="form-group">
-
-                        <label for="subject">Subject</label>
-
-                        <input type="text"
-                               id="subject"
-                               name="subject">
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="message">Message</label>
-
-                        <textarea id="message"
-                                  name="message"
+                        <label
+                            data-en="Message"
+                            data-th="ข้อความ">
+                            Message
+                        </label>
+                        <textarea name="message"
                                   rows="6"
                                   required></textarea>
-
                     </div>
-
-                    <button type="submit" class="btn-primary">
-                        Send Enquiry
+                    <button type="submit"
+                            class="btn-primary"
+                            data-en="Submit Enquiry"
+                            data-th="ส่งข้อความ">
+                        Submit Enquiry
                     </button>
-
                 </form>
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- Regional Support -->
+    <!-- Contact CTA -->
     <section class="contact-cta-simple">
-
         <div class="container">
-
-            <h2>
+            <h2
+                data-en="Supporting Projects Across Thailand and Asia"
+                data-th="สนับสนุนโครงการทั่วประเทศไทยและเอเชีย">
                 Supporting Projects Across Thailand and Asia
             </h2>
-
-            <p>
-                Providing commissioning, technical review and project support
+            <p
+                data-en="Providing commissioning, technical review and project support for complex engineering environments."
+                data-th="ให้บริการด้าน Commissioning การทบทวนทางเทคนิค และการสนับสนุนโครงการสำหรับงานวิศวกรรมที่มีความซับซ้อน">
+                Providing commissioning,
+                technical review and project support
                 for complex engineering environments.
             </p>
-
         </div>
-
     </section>
-
-    <!-- Mission Quote -->
-    <section class="contact-quote">
-
-        <div class="container">
-
-            <blockquote>
-                No politics. No heroes. No shortcuts.
-                <br>
-
-                <strong>
-                    Just good people doing good work properly.
-                </strong>
-
-            </blockquote>
-
-        </div>
-
-    </section>
-
     <!-- Footer -->
     <footer>
-
         <div class="container footer-grid">
-
             <div>
-
-                <h3>Cole Opus Asia</h3>
-
-                <p>
+                <h3>
+                    Cole Opus Asia
+                </h3>
+                <p
+                    data-en="Commissioning & Technical Advisory"
+                    data-th="ที่ปรึกษาด้าน Commissioning และเทคนิค">
                     Commissioning & Technical Advisory
                 </p>
-
             </div>
-
             <div>
-
                 <p>
                     <a href="tel:+66642258179">
                         +66 64 225 8179
                     </a>
                 </p>
-
                 <p>
                     <a href="mailto:info@coleopusasia.com">
                         info@coleopusasia.com
                     </a>
                 </p>
-
-                <p>
+                <p
+                    data-en="Thailand"
+                    data-th="ประเทศไทย">
                     Thailand
                 </p>
-
             </div>
-
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Cole Opus Asia. All Rights Reserved.
+            </p>
         </div>
     </footer>
-
+    <!-- Language Script -->
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -552,6 +552,7 @@ footer{
 .approach-quote{
     text-align:center;
     background:#f8f9fa;
+    padding:80px 20px;
 }
 .approach-quote blockquote{
     max-width:800px;
@@ -562,16 +563,25 @@ footer{
 }
 .approach-quote strong{
     display:block;
-    margin-top:15px;
-    font-size:1.8rem;
+    width:auto;
 }
 .cta{
     text-align:center;
+    padding:100px 20px;
 }
 .cta p{
     max-width:600px;
-    margin:20px auto 30px;
+    margin:15px auto;
+    line-height: 1.7;
 }
+.cta .btn{
+    display :inline-block;
+    padding:12px 28px;
+    margin-top:15px;
+    font-size:1rem;
+    
+}
+
 @media (max-width:768px){
     .client-grid{
         grid-template-columns:1fr;
@@ -582,6 +592,16 @@ footer{
     .approach-quote strong{
         font-size:1.4rem;
     }
+}
+.contact-cta .btn-light{
+    display: inline-block;
+    width: auto;
+    padding: 12px 28px;
+    margin-top: 20px;
+}
+
+.contact-cta p{
+    margin-bottom: 20px;
 }
 
 /* Contact Page */
@@ -738,4 +758,34 @@ footer{
         margin-left:0;
         margin-top:10px;
     }
+}
+
+.language-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.language-switcher button {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 6px;
+    margin-left: auto; /* ดันไปขวาสุด */
+}
+
+.language-switcher button {
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
 }

@@ -5,176 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Cole Opus Asia</title>
     <meta name="description"
-        content="Learn more about Cole Opus Asia, our mission, values, and approach to commissioning and technical advisory across Asia.">
+          content="Learn more about Cole Opus Asia, our mission, values and approach to commissioning and technical advisory services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container nav">
-
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Cole Opus Asia Logo" width="200">
+                    <img src="images/logo.png"
+                         alt="Cole Opus Asia Logo"
+                         class="logo-img">
                 </a>
             </div>
-
             <nav>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html" class="active">About</a>
-                <a href="approach.html">Approach</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html"
+                   data-en="Home"
+                   data-th="หน้าแรก">
+                    Home
+                </a>
+                <a href="services.html"
+                   data-en="Services"
+                   data-th="บริการ">
+                    Services
+                </a>
+                <a href="about.html"
+                   class="active"
+                   data-en="About"
+                   data-th="เกี่ยวกับเรา">
+                    About
+                </a>
+                <a href="approach.html"
+                   data-en="Approach"
+                   data-th="แนวทางการทำงาน">
+                    Approach
+                </a>
+                <a href="contact.html"
+                   data-en="Contact"
+                   data-th="ติดต่อ">
+                    Contact
+                </a>
+                <div class="language-switcher">
+                    <button onclick="setLanguage('en')">
+                        EN
+                    </button>
+                    <button onclick="setLanguage('th')">
+                        TH
+                    </button>
+                </div>
             </nav>
-
         </div>
     </header>
     <!-- Hero -->
     <section class="page-hero">
         <div class="container">
-            <span class="section-tag">
+            <span class="section-tag"
+                  data-en="ABOUT US"
+                  data-th="เกี่ยวกับเรา">
                 ABOUT US
             </span>
-            <h1>
-                We Exist to Deliver Work Properly
+            <h1
+                data-en="Built on Integrity, Discipline and Practical Support"
+                data-th="สร้างขึ้นบนความซื่อสัตย์ วินัย และการสนับสนุนที่ลงมือทำได้จริง">
+                Built on Integrity,
+                Discipline and Practical Support
             </h1>
-            <p>
-                Cole Opus Asia is a Thailand-based engineering consultancy 
-                providing commissioning and technical advisory services 
-                for complex projects across Asia.
+            <p
+                data-en="Cole Opus Asia provides commissioning and technical advisory services with a focus on professionalism, transparency and long-term relationships."
+                data-th="Cole Opus Asia ให้บริการด้าน Commissioning และที่ปรึกษาทางเทคนิค โดยยึดมั่นในความเป็นมืออาชีพ ความโปร่งใส และความสัมพันธ์ที่ยั่งยืน">
+                Cole Opus Asia provides commissioning and technical advisory services with a focus on professionalism, transparency and long-term relationships.
             </p>
         </div>
     </section>
-    <!-- Who We Are -->
-    <section class="about-story">
+    <!-- About Introduction -->
+    <section class="about">
         <div class="container">
             <div class="section-title">
-                <h2>What we do</h2>
+                <h2
+                    data-en="Who We Are"
+                    data-th="เราเป็นใคร">
+                    Who We Are
+                </h2>
             </div>
-            <div class="content-width">
-                <p>
-                    The company combines international data centre 
-                    commissioningexperience with a practical, 
-                    process-led approach to project delivery.
-                </p>
-                <p>
-                    Our work spans mission critical facilities,
-                    data centres, and high-reliability environments
-                    where quality, clarity, and accountability matter.
-                </p>
-                <p>
-                    We believe trust is earned through consistency,
-                    honesty, and the willingness to do the ordinary
-                    things exceptionally well.
-                </p>
-            </div>
+            <p class="about-text"
+               data-en="Cole Opus Asia is a Thailand-based engineering consultancy supporting projects across Asia. We work alongside clients, consultants and contractors to improve visibility, reduce uncertainty and support successful delivery."
+               data-th="Cole Opus Asia เป็นบริษัทที่ปรึกษาด้านวิศวกรรมที่ตั้งอยู่ในประเทศไทย และสนับสนุนโครงการทั่วภูมิภาคเอเชีย เราทำงานร่วมกับลูกค้า ที่ปรึกษา และผู้รับเหมา เพื่อเพิ่มความชัดเจน ลดความไม่แน่นอน และช่วยให้โครงการประสบความสำเร็จ">
+                Cole Opus Asia is a Thailand-based engineering consultancy
+                supporting projects across Asia.
+                We work alongside clients, consultants and contractors
+                to improve visibility, reduce uncertainty and support
+                successful delivery.
+            </p>
+            <p class="about-text"
+               data-en="Our work focuses on commissioning, technical review and practical project support for mission critical facilities and complex engineering environments."
+               data-th="งานของเรามุ่งเน้นด้าน Commissioning การทบทวนทางเทคนิค และการสนับสนุนโครงการเชิงปฏิบัติ สำหรับอาคารและระบบที่มีความสำคัญสูง รวมถึงสภาพแวดล้อมทางวิศวกรรมที่ซับซ้อน">
+                Our work focuses on commissioning,
+                technical review and practical project support
+                for mission critical facilities and complex
+                engineering environments.
+            </p>
         </div>
     </section>
-    <!-- Mission Statement -->
-    <section class="mission">
+        <!-- Mission Statement -->
+    <section class="mission-section">
         <div class="container">
             <div class="section-title">
-                <h2>Our Mission</h2>
+                <h2
+                    data-en="Our Mission"
+                    data-th="พันธกิจของเรา">
+                    Our Mission
+                </h2>
             </div>
-            <div class="content-width">
-                <p>
-                    We exist to deliver work properly
+            <div class="mission-card">
+                <p
+                    data-en="We exist to deliver work properly."
+                    data-th="เรามีอยู่เพื่อทำงานให้ถูกต้อง">
+                    We exist to deliver work properly.
                 </p>
-                <p>
-                    We do what we say we will do.
-                    We tell the truth, even when it is uncomfortable.
-                    We take responsibility for our mistakes and take
-                    pride in our successes without ego.
+                <p
+                    data-en="We do what we say we'll do. We tell the truth, even when it's uncomfortable."
+                    data-th="เราทำในสิ่งที่เราพูด และพูดความจริง แม้ในวันที่มันไม่ง่าย">
+                    We do what we say we'll do.
+                    We tell the truth, even when it's uncomfortable.
                 </p>
-                <p>
-                    We believe consistency matters more than moments
-                    of brilliance, because projects succeed when
-                    ordinary people do the unglamorous things well,
-                    day after day, with care, discipline,
-                    and professionalism.
+                <p
+                    data-en="We take responsibility for our mistakes and pride in our successes without ego."
+                    data-th="เรารับผิดชอบต่อความผิดพลาดของตนเอง และภาคภูมิใจในความสำเร็จโดยไม่ปล่อยให้อัตตานำทาง">
+                    We take responsibility for our mistakes
+                    and pride in our successes without ego.
                 </p>
-                <p>
-                    We invest in people.
-                    We share what we know and build capability
-                    rather than dependency.
-                    We treat clients, colleagues, contractors,
-                    and communities with respect,
+                <p
+                    data-en="We believe consistency beats brilliance when brilliance cannot be relied upon."
+                    data-th="เราเชื่อว่าความสม่ำเสมอสำคัญกว่าความเก่งเพียงชั่วครั้งชั่วคราว">
+                    We believe consistency beats brilliance
+                    when brilliance cannot be relied upon.
+                </p>
+                <p
+                    data-en="Projects succeed because ordinary people do the unglamorous things well, day after day, with care and discipline."
+                    data-th="โครงการที่ดีเกิดจากผู้คนธรรมดาที่ทำสิ่งเล็ก ๆ อย่างมีวินัย ใส่ใจ และรับผิดชอบในทุก ๆ วัน">
+                    Projects succeed because ordinary people
+                    do the unglamorous things well,
+                    day after day,
+                    with care and discipline.
+                </p>
+                <p
+                    data-en="We invest in people, share what we know and build capability rather than dependency."
+                    data-th="เราแบ่งปันความรู้ สร้างคน และพัฒนาศักยภาพ เพื่อให้ผู้คนเติบโตได้ด้วยตนเอง">
+                    We invest in people,
+                    share what we know,
+                    and build capability rather than dependency.
+                </p>
+                <p
+                    data-en="We treat clients, colleagues, contractors and communities with respect, regardless of title or status."
+                    data-th="เราให้เกียรติลูกค้า เพื่อนร่วมงาน คู่ค้า และชุมชน โดยไม่แบ่งแยกตำแหน่งหรือสถานะ">
+                    We treat clients,
+                    colleagues,
+                    contractors and communities
+                    with respect,
                     regardless of title or status.
                 </p>
-                <p>
-                    We strive to leave everything better
-                    than we found it.
+                <p
+                    data-en="We leave things better than we found them."
+                    data-th="เรามุ่งมั่นที่จะทำให้ทุกสิ่งที่เราสัมผัสดีขึ้นกว่าตอนที่เราได้รับมา">
+                    We leave things better than we found them.
                 </p>
-                <blockquote>
-                    No politics. No heroes. No shortcuts.
-                    <br>
-                    <strong>
-                        Just good people doing good work properly.
-                    </strong>
-                </blockquote>
             </div>
         </div>
     </section>
-    <!-- Principles -->
+    <!-- Core Values -->
     <section class="approach">
         <div class="container">
             <div class="section-title">
-                <h2>Our Principles</h2>
+                <h2
+                    data-en="What We Stand For"
+                    data-th="สิ่งที่เรายึดมั่น">
+                    What We Stand For
+                </h2>
             </div>
             <div class="approach-grid">
                 <div>
-                    <h3>Integrity</h3>
-                    <p>We tell the truth and honour our commitments.</p>
+                    <h3 data-en="Integrity" data-th="ความซื่อสัตย์">
+                        Integrity
+                    </h3>
+                    <p data-en="Doing what we say we will do."
+                       data-th="ทำในสิ่งที่เราพูดว่าจะทำ">
+                        Doing what we say we will do.
+                    </p>
                 </div>
                 <div>
-                    <h3>Discipline</h3>
-                    <p>Consistency and preparation drive outcomes.</p>
+                    <h3 data-en="Respect" data-th="การให้เกียรติ">
+                        Respect
+                    </h3>
+                    <p data-en="Treating everyone with dignity."
+                       data-th="ปฏิบัติต่อทุกคนด้วยความเคารพ">
+                        Treating everyone with dignity.
+                    </p>
                 </div>
                 <div>
-                    <h3>Respect</h3>
-                    <p>Every person deserves dignity and professionalism.</p>
+                    <h3 data-en="Discipline" data-th="วินัย">
+                        Discipline
+                    </h3>
+                    <p data-en="Consistency in the small things."
+                       data-th="ความสม่ำเสมอในสิ่งเล็ก ๆ">
+                        Consistency in the small things.
+                    </p>
                 </div>
                 <div>
-                    <h3>Capability</h3>
-                    <p>We build knowledge and empower others.</p>
+                    <h3 data-en="Capability" data-th="การพัฒนาศักยภาพ">
+                        Capability
+                    </h3>
+                    <p data-en="Helping others grow and succeed."
+                       data-th="ช่วยให้ผู้อื่นเติบโตและประสบความสำเร็จ">
+                        Helping others grow and succeed.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Regional Focus -->
-    <section class="coverage">
-        <div class="container coverage-grid">
-            <div class="coverage-content">
-                <span class="section-tag">
-                    REGIONAL FOCUS
-                </span>
-                <h2>
-                    Supporting Projects Across Asia
-                </h2>
-                <p>
-                    Based in Thailand and supporting projects across Asia,
-                    Cole Opus Asia provides commissioning,
-                    technical review and project support
-                    wherever our clients need trusted expertise.
-                </p>
-            </div>
-            <div class="coverage-image">
-                <img src="images/asia-map.jpg"
-                     alt="Asia Coverage Map">
-            </div>
+    <!-- Mission Quote -->
+    <section class="approach-quote">
+        <div class="container">
+            <blockquote
+                data-en="No politics. No heroes. No shortcuts. Just good people doing good work properly."
+                data-th="ไม่มีการเมืองในที่ทำงาน ไม่มีการยกย่องวีรบุรุษ ไม่มีทางลัด มีเพียงผู้คนที่ดีที่ทำงานที่ดีอย่างถูกต้อง">
+                No politics.
+                No heroes.
+                No shortcuts.
+                <br><br>
+                <strong>
+                    Just good people doing good work properly.
+                </strong>
+            </blockquote>
         </div>
     </section>
     <!-- Contact CTA -->
     <section class="contact-cta">
         <div class="container">
-            <h2>
-                Ready to discuss your project?
+            <h2
+                data-en="Ready to Work Together?"
+                data-th="พร้อมร่วมงานกับเราหรือยัง?">
+                Ready to Work Together?
             </h2>
-            <a href="contact.html" class="btn-light">
+            <a href="contact.html"
+               class="btn-light"
+               data-en="Contact Us"
+               data-th="ติดต่อเรา">
                 Contact Us
             </a>
         </div>
@@ -184,7 +264,11 @@
         <div class="container footer-grid">
             <div>
                 <h3>Cole Opus Asia</h3>
-                <p>Commissioning & Technical Advisory</p>
+                <p
+                    data-en="Commissioning & Technical Advisory"
+                    data-th="ที่ปรึกษาด้าน Commissioning และเทคนิค">
+                    Commissioning & Technical Advisory
+                </p>
             </div>
             <div>
                 <p>
@@ -197,9 +281,19 @@
                         info@coleopusasia.com
                     </a>
                 </p>
-                <p>Thailand</p>
+                <p
+                    data-en="Thailand"
+                    data-th="ประเทศไทย">
+                    Thailand
+                </p>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Cole Opus Asia. All Rights Reserved.
+            </p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
