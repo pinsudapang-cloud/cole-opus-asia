@@ -881,3 +881,39 @@ nav {
     cursor: pointer;
     white-space: nowrap;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+@media (max-width: 768px) {
+
+    .hero-grid,
+    .service-grid,
+    .approach-grid,
+    .about-grid,
+    .focus-grid,
+    .industry-grid,
+    .coverage-grid,
+    .client-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+}
+body {
+    overflow-x: hidden;
+}
