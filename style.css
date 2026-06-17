@@ -16,7 +16,24 @@ body{
     max-width:1140px;
     margin:auto;
 }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
+header.hide{
+    transform: translateY(-100%);
+}
+
+body{
+    padding-top: 90px;
+}
 header{
     position:sticky;
     top:0;
@@ -24,7 +41,24 @@ header{
     border-bottom:1px solid #e5e7eb;
     z-index:100;
 }
+.nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #334155;
+    margin-left: 30px;
+}
 .nav{
     height:80px;
     display:flex;
@@ -170,6 +204,17 @@ footer{
         gap:20px;
     }
 }
+/* Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    background: #ffffff;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
 /*service page*/
 .page-hero{
@@ -229,11 +274,18 @@ footer{
     padding:120px 0;
 }
 
+.service-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap: 24px;
+    margin-top:40px;
+}
+
 .benefits-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-    margin-top:60px;
+    grid-template-columns:1fr;
+    gap:24px;
+    margin-top:40px;
 }
 
 .benefits-grid h3{
@@ -243,6 +295,24 @@ footer{
 .active{
     color:#2563eb;
     font-weight:600;
+}
+.service-list {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+}
+
+.service-content h4,
+.card h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 @media(max-width:768px){
@@ -262,7 +332,54 @@ footer{
     .service-number{
         font-size:32px;
     }
+    .service-grid{
+        grid-template-columns:1fr;
+    }
 }
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    }
+@media (max-width: 768px) {
+
+    .service-block{
+        grid-template-columns:1fr;
+    }
+
+    .benefits-grid{
+        grid-template-columns:1fr;
+    }
+
+    .page-hero h1{
+        font-size:36px;
+    }
+
+    .service-number{
+        font-size:32px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-list{
+        padding-left:18px;
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .service-list li{
+        margin-bottom:6px;
+    }
+
+    .card h4,
+    .service-content h4{
+        font-size:15px;
+    }
+}
+
 
 /* Mission Statement */
 
