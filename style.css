@@ -206,8 +206,45 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
+}
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
 
     nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
         display: none;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
