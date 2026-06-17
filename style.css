@@ -193,3 +193,21 @@ footer {
         padding: 20px;
     }
 }
+/* ===== MOBILE LOGO CENTER FIX ===== */
+@media (max-width: 768px) {
+
+    .nav {
+        position: relative;
+        justify-content: center;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav {
+        display: none;
+    }
+}
