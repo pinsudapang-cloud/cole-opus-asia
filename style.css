@@ -14,13 +14,14 @@ body {
     overflow-x: hidden;
 }
 
-/* ================= GLOBAL ================= */
+/* ================= CONTAINER ================= */
 .container {
     width: 90%;
     max-width: 1140px;
     margin: auto;
 }
 
+/* ================= GLOBAL MEDIA FIX ================= */
 img {
     max-width: 100%;
     height: auto;
@@ -60,6 +61,7 @@ header.hide {
 .logo img {
     height: 50px;
     width: auto;
+    display: block;
 }
 
 nav {
@@ -98,6 +100,7 @@ nav a {
 }
 
 .hero-image img {
+    width: 100%;
     border-radius: 12px;
 }
 
@@ -126,7 +129,7 @@ nav a {
     font-size: 2.2rem;
 }
 
-/* ================= GRIDS ================= */
+/* ================= GRID SYSTEM ================= */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,7 +163,7 @@ footer {
     border-top: 1px solid #e5e7eb;
 }
 
-/* ================= MOBILE FIX (สำคัญที่สุด) ================= */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
     .hero-grid,
