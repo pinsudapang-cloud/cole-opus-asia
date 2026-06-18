@@ -7,6 +7,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setLanguage(savedLanguage);
 
+    const header = document.querySelector("header");
+
+    if (!header) return;
+
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        const isMobile = window.innerWidth <= 1024;
+
+        if (!isMobile) {
+            header.classList.remove("hide");
+            return;
+        }
+
+        if (scrollTop <= 0) {
+            header.classList.remove("hide");
+        } else if (scrollTop > lastScrollTop) {
+            header.classList.add("hide");
+        } else {
+            header.classList.remove("hide");
+        }
+
+        lastScrollTop = scrollTop;
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
