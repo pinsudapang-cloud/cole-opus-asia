@@ -38,3 +38,26 @@ function toggleMenu() {
         nav.classList.toggle("active");
     }
 }
+
+function setLanguage(lang) {
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll("[data-en]").forEach(element => {
+
+        if (element.dataset[lang]) {
+            element.textContent = element.dataset[lang];
+        }
+
+    });
+
+    localStorage.setItem("language", lang);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const savedLanguage =
+        localStorage.getItem("language") || "en";
+
+    setLanguage(savedLanguage);
+});

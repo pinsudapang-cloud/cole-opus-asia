@@ -941,4 +941,15 @@ nav {
         margin-top:15px;
         margin-left:0;
     }
+    
+}
+.language-switcher{
+    display:flex;
+    gap:8px;
+    z-index:2000;
+    position:relative;
+}
+
+.language-switcher button{
+    cursor:pointer;
 }
