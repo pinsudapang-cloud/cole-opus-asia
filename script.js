@@ -34,3 +34,7 @@ function toggleMenu() {
     const nav = document.getElementById("nav-menu");
     nav.classList.toggle("active");
 }
+
+function toggleMenu(){
+    document.getElementById("nav-menu").classList.toggle("active");
+}
