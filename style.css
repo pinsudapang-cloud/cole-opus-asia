@@ -48,17 +48,6 @@ header{
     align-items: center;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-nav a{
-    text-decoration: none;
-    color: #334155;
-    margin-left: 30px;
-}
 .nav{
     height:80px;
     display:flex;
@@ -326,11 +315,6 @@ footer{
     }
 }
 
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-    }
 @media (max-width: 768px) {
 
     .service-block{
@@ -894,4 +878,44 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
     white-space: nowrap;
+}
+
+/* ===== Mobile Header Layout ===== */
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        position: relative;
+        justify-content: center;
+        height: 80px;
+    }
+
+    /* Logo อยู่กลาง */
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+        display: block;
+    }
+
+    /* Hamburger ชิดขวา */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 28px;
+        cursor: pointer;
+        padding: 10px;
+    }
 }
