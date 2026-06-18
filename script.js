@@ -2,6 +2,15 @@ console.log("SCRIPT LOADED");
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    const savedLanguage =
+        localStorage.getItem("language") || "en";
+
+    setLanguage(savedLanguage);
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
     const header = document.querySelector("header");
 
     if (!header) return;
