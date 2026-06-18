@@ -828,42 +828,103 @@ footer{
     background:#0D2B45;
     color:#ffffff;
 }
-/* ===== Mobile Header Layout ===== */
-
-.hamburger {
-    display: none;
+/* Logo */
+.logo-img{
+    width:200px;
+    max-width:100%;
+    height:auto;
 }
 
-@media (max-width: 768px) {
 
-    .nav {
-        position: relative;
-        justify-content: center;
-        height: 80px;
+.language-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.language-switcher button {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 6px;
+    margin-left: auto; /* ดันไปขวาสุด */
+}
+
+.language-switcher button {
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ===== FINAL MOBILE MENU FIX ===== */
+
+.hamburger{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .nav{
+        position:relative;
+        justify-content:center;
+        height:80px;
     }
 
-    /* Logo อยู่กลาง */
-    .logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+    .logo{
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
     }
 
-    .logo img {
-        height: 50px;
-        width: auto;
-        display: block;
+    .logo img{
+        height:50px;
+        width:auto;
     }
 
-    /* Hamburger ชิดขวา */
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 28px;
-        cursor: pointer;
-        padding: 10px;
+    .hamburger{
+        display:block;
+        position:absolute;
+        right:0;
+        top:50%;
+        transform:translateY(-50%);
+        font-size:30px;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    #nav-menu{
+        display:none !important;
+    }
+
+    #nav-menu.active{
+        display:flex !important;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        padding:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+        z-index:1000;
+    }
+
+    #nav-menu a{
+        margin:10px 0;
+    }
+
+    .language-switcher{
+        margin-top:15px;
+        margin-left:0;
     }
 }
