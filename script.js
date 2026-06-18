@@ -1,3 +1,5 @@
+console.log("SCRIPT LOADED");
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const header = document.querySelector("header");
@@ -30,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-const toggleMenu = () => {
+function toggleMenu() {
     const nav = document.getElementById("nav-menu");
     if (nav) {
         nav.classList.toggle("active");
     }
-};
+}
