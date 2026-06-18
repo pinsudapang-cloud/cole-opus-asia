@@ -207,40 +207,13 @@ footer{
 
 @media (max-width: 768px) {
 
-    .nav {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-    }
-
-    /* LOGO กลาง */
-    .logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    /* HAMBURGER ชิดขวา */
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 28px;
-        cursor: pointer;
-    }
-
-    /* MENU dropdown */
     nav {
         display: none;
         position: absolute;
         top: 80px;
         left: 0;
         width: 100%;
-        background: #fff;
+        background: white;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -255,6 +228,7 @@ footer{
         padding: 12px 0;
     }
 }
+
 
 /*service page*/
 .page-hero{
@@ -945,4 +919,55 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+
+    /* LOGO กลาง */
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* HAMBURGER ชิดขวา */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* MENU dropdown */
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 12px 0;
+    }
 }
