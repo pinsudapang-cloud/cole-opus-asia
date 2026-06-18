@@ -834,7 +834,21 @@ footer{
     max-width:100%;
     height:auto;
 }
-
+/* Mobile */
+@media (max-width:768px){
+    .nav{
+        flex-direction:column;
+        gap:20px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .language-switcher{
+        margin-left:0;
+        margin-top:10px;
+    }
+}
 
 .language-switcher {
     display: flex;
