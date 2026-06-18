@@ -828,58 +828,6 @@ footer{
     background:#0D2B45;
     color:#ffffff;
 }
-/* Logo */
-.logo-img{
-    width:200px;
-    max-width:100%;
-    height:auto;
-}
-/* Mobile */
-@media (max-width:768px){
-    .nav{
-        flex-direction:column;
-        gap:20px;
-    }
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-    .language-switcher{
-        margin-left:0;
-        margin-top:10px;
-    }
-}
-
-.language-switcher {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-}
-
-.language-switcher button {
-    display: inline-block;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.language-switcher {
-    display: flex;
-    gap: 6px;
-    margin-left: auto; /* ดันไปขวาสุด */
-}
-
-.language-switcher button {
-    padding: 5px 10px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
 /* ===== Mobile Header Layout ===== */
 
 .hamburger {
