@@ -52,12 +52,11 @@ function setLanguage(lang) {
     });
 
     localStorage.setItem("language", lang);
+
+    /* ปิด hamburger menu หลังเปลี่ยนภาษา */
+    const nav = document.getElementById("nav-menu");
+
+    if (nav) {
+        nav.classList.remove("active");
+    }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const savedLanguage =
-        localStorage.getItem("language") || "en";
-
-    setLanguage(savedLanguage);
-});
