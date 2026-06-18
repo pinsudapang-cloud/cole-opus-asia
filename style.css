@@ -207,13 +207,40 @@ footer{
 
 @media (max-width: 768px) {
 
+    .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+
+    /* LOGO กลาง */
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* HAMBURGER ชิดขวา */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* MENU dropdown */
     nav {
         display: none;
         position: absolute;
         top: 80px;
         left: 0;
         width: 100%;
-        background: white;
+        background: #fff;
         flex-direction: column;
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
