@@ -968,3 +968,18 @@ nav {
 .language-switcher button{
     cursor:pointer;
 }
+
+media (max-width:768px){
+
+    #nav-menu.active{
+        background:#fff;
+    }
+
+    #nav-menu.active a{
+        color:#0D2B45 !important;
+    }
+
+    nav a{
+        color:#0D2B45 !important;
+    }
+}
