@@ -97,7 +97,7 @@ nav a{
 .btn{
     display:inline-block;
     background:#0f172a;
-    color:white;
+    color:#ffffff;
     padding:14px 28px;
     text-decoration:none;
     border-radius:8px;
@@ -826,14 +826,14 @@ nav a.active{
         color 0.3s ease;
 }
 .language-switcher button:hover{
-    background:#ffffff;
-    color: #0D2B45;
+    background:#0D2B45;
+    color: #ffffff;
 }
 .language-switcher button.active{
     letter-spacing : 0.5px;
-    background :#ffffff;
-    color:#0D2B45;
-    border:1px solid #0D2B45;
+    background :#0D2B45;
+    color:#ffffff;
+    border:1px solid #ffffff;
 }
 /* Logo */
 .logo-img{
