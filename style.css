@@ -21,7 +21,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #0d223d;
     z-index: 1000;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
