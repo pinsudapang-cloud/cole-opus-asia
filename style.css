@@ -830,7 +830,8 @@ nav a.active{
     color: #0D2B45;
 }
 .language-switcher button.active{
-    background :ffffff;
+    letter-spacing : 0.5px;
+    background :#ffffff;
     color:#0D2B45;
     border:1px solid #0D2B45;
 }
@@ -895,7 +896,8 @@ nav {
 /* ===== FINAL MOBILE MENU FIX ===== */
 
 .hamburger{
-    display:none;
+    color: #ffffff !important;
+    font-size : 30px;
 }
 
 @media (max-width:768px){
