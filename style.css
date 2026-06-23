@@ -879,6 +879,12 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
     white-space: nowrap;
+    transition: 0.3s ease;
+}
+.language-switcher button.active {
+    background: #0D2B45;
+    color: #ffffff;
+    border: 1px solid #0D2B45;
 }
 
 /* ===== FINAL MOBILE MENU FIX ===== */
