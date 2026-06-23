@@ -25,6 +25,7 @@ header{
     z-index: 1000;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #e5e7eb;
 }
 
 header.hide{
@@ -34,13 +35,7 @@ header.hide{
 body{
     padding-top: 90px;
 }
-header{
-    position:fixed;
-    top:0;
-    background:#fff;
-    border-bottom:1px solid #e5e7eb;
-    z-index:100;
-}
+
 .nav{
     height: 80px;
     display: flex;
