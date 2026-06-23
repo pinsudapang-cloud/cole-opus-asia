@@ -271,8 +271,8 @@ footer{
     margin-bottom:10px;
 }
 
-.active{
-    color:#2563eb;
+nav a.active{
+    color:#3f78f1;
     font-weight:600;
 }
 .service-list {
@@ -814,7 +814,7 @@ footer{
 .language-switcher button{
     background:transparent;
     border:1px solid #0c1e36;
-    color:#0c1e36;
+    color:#ffffff;
     padding:6px 12px;
     border-radius:6px;
     font-family:inherit;
@@ -828,6 +828,11 @@ footer{
 .language-switcher button:hover{
     background:#ffffff;
     color: #0D2B45;
+}
+.language-switcher button.active{
+    background :ffffff;
+    color:#0D2B45;
+    border:1px solid #ffffff;
 }
 /* Logo */
 .logo-img{
