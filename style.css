@@ -811,7 +811,8 @@ nav a.active{
     gap:8px;
     margin-left:20px;
 }
-.language-switcher button{
+@media (max-width:769px){
+    .language-switcher button{
     background:transparent;
     border:1px solid #ffffff;
     color:#ffffff;
@@ -831,9 +832,10 @@ nav a.active{
 }
 .language-switcher button.active{
     letter-spacing : 0.5px;
-    background :#0D2B45;
-    color:#ffffff;
-    border:1px solid #ffffff;
+    background :#ffffff;
+    color:#0c1e36;
+    border:1px solid  #0c1e36;
+}
 }
 /* Logo */
 .logo-img{
