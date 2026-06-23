@@ -60,9 +60,15 @@ header{
     letter-spacing:1px;
 }
 
+.logo-img{
+    height : 70px;
+    width : auto;
+    display :block;
+}
+
 nav a{
     text-decoration:none;
-    color:#334155;
+    color:#ffffff;
     margin-left:30px;
 }
 
