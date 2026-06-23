@@ -896,8 +896,7 @@ nav {
 /* ===== FINAL MOBILE MENU FIX ===== */
 
 .hamburger{
-    color: #ffffff !important;
-    font-size : 30px;
+    display :none;
 }
 
 @media (max-width:768px){
@@ -918,7 +917,6 @@ nav {
         height:70px;
         width:auto;
     }
-
     .hamburger{
         display:block;
         position:absolute;
