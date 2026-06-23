@@ -272,7 +272,7 @@ footer{
 }
 
 nav a.active{
-    color:#3f78f1;
+    color:#2563eb;
     font-weight:600;
 }
 .service-list {
@@ -888,7 +888,7 @@ nav {
 }
 .language-switcher button.active {
     background: #0D2B45;
-    color: #ffffff;
+    color: #0D2B45;
     border: 1px solid #0D2B45;
 }
 
@@ -929,7 +929,7 @@ nav {
         cursor: pointer;
     }
     .hamburger span{
-        background-color: #fff !important;
+        background-color: #ffffff !important;
         transition: 0.3s;
     }
 
