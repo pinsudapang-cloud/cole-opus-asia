@@ -814,7 +814,7 @@ nav a.active{
 .language-switcher button{
     background:transparent;
     border:1px solid #0c1e36;
-    color:#ffffff;
+    color:#0c1e36;
     padding:6px 12px;
     border-radius:6px;
     font-family:inherit;
