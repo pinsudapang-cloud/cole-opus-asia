@@ -897,6 +897,9 @@ nav {
 
 .hamburger{
     display :none;
+    font: size 28px;
+    cursor:pointer;
+    color: #ffffff;
 }
 
 @media (max-width:768px){
