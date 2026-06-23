@@ -67,19 +67,3 @@ function setLanguage(lang) {
         nav.classList.remove("active");
     }
 }
-function setLanguage(lang) {
-
-    // เปลี่ยน class ของ body
-    document.body.classList.remove("lang-en", "lang-th");
-    document.body.classList.add("lang-" + lang);
-
-    // จัดการปุ่ม active
-    document.getElementById("btn-en").classList.remove("active");
-    document.getElementById("btn-th").classList.remove("active");
-
-    if (lang === "en") {
-        document.getElementById("btn-en").classList.add("active");
-    } else {
-        document.getElementById("btn-th").classList.add("active");
-    }
-}

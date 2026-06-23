@@ -845,6 +845,9 @@ footer{
         flex-wrap:wrap;
         justify-content:center;
     }
+    nav a{
+        color: #0c1e36 !important;
+    }
     .language-switcher{
         margin-left:0;
         margin-top:10px;
