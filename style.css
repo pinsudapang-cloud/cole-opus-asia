@@ -832,7 +832,7 @@ nav a.active{
 .language-switcher button.active{
     background :ffffff;
     color:#0D2B45;
-    border:1px solid #ffffff;
+    border:1px solid #0D2B45;
 }
 /* Logo */
 .logo-img{
