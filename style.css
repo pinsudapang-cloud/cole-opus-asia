@@ -813,8 +813,8 @@ footer{
 }
 .language-switcher button{
     background:transparent;
-    border:1px solid #ffffff;
-    color:#ffffff;
+    border:1px solid #0c1e36;
+    color:#0c1e36;
     padding:6px 12px;
     border-radius:6px;
     font-family:inherit;
@@ -826,8 +826,8 @@ footer{
         color 0.3s ease;
 }
 .language-switcher button:hover{
-    background:#0D2B45;
-    color:#ffffff;
+    background:#ffffff;
+    color: #0D2B45;
 }
 /* Logo */
 .logo-img{
@@ -844,9 +844,6 @@ footer{
     nav{
         flex-wrap:wrap;
         justify-content:center;
-    }
-    nav a{
-        color: #0c1e36 !important;
     }
     .language-switcher{
         margin-left:0;
